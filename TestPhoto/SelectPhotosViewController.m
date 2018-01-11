@@ -46,7 +46,32 @@
 
 -(void)initNav
 {
-//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+    // 在主线程异步加载，使下面的方法最后执行，防止其他的控件挡住了导航栏
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // 隐藏系统导航栏
+        [self.navigationController setNavigationBarHidden:YES animated:NO];
+        // 创建假的导航栏
+        UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+        navView.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1.0f];
+        [self.view addSubview:navView];
+        // 创建导航栏左按钮
+        UIButton *left= [UIButton buttonWithType:UIButtonTypeSystem];
+        left.frame = CGRectMake(20, 27, 30, 30);
+        [left setBackgroundImage:[UIImage imageNamed:@"Numberback_highlight"] forState:UIControlStateNormal];
+        [left addTarget:self action:@selector(preAction) forControlEvents:UIControlEventTouchUpInside];
+        [navView addSubview:left];
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        titleLabel.text = @"添加智能图标";
+        titleLabel.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1.0f];
+        titleLabel.frame = CGRectMake(left.frame.origin.x + left.frame.size.width + 20, 20, 150, 44);
+        [navView addSubview:titleLabel];
+    });
+}
+
+-(void)preAction
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)getOriginalImages

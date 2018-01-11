@@ -18,7 +18,7 @@
 		F41767AA2005F6430004BCF2 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41767A82005F6430004BCF2 /* PhotoViewController.xib */; };
 		F41767AD20060B160004BCF2 /* SelectPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41767AC20060B160004BCF2 /* SelectPhotosViewController.m */; };
 		F41767B020060C150004BCF2 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F41767AF20060C150004BCF2 /* PhotoCollectionViewCell.m */; };
-		F41767B42006190F0004BCF2 /* smart2_bg_temp.png in Resources */ = {isa = PBXBuildFile; fileRef = F41767B32006190F0004BCF2 /* smart2_bg_temp.png */; };
+		F41767B62007078C0004BCF2 /* Numberback_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = F41767B52007078C0004BCF2 /* Numberback_highlight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		F41767AC20060B160004BCF2 /* SelectPhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectPhotosViewController.m; sourceTree = "<group>"; };
 		F41767AE20060C150004BCF2 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		F41767AF20060C150004BCF2 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
-		F41767B32006190F0004BCF2 /* smart2_bg_temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smart2_bg_temp.png; sourceTree = "<group>"; };
+		F41767B52007078C0004BCF2 /* Numberback_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Numberback_highlight.png; sourceTree = "<group>"; };
 		F5E20DC4CAA5135D7D14DB81 /* Pods-TestPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPhoto/Pods-TestPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 				F417679B2005F5BA0004BCF2 /* LaunchScreen.storyboard */,
 				F417679E2005F5BA0004BCF2 /* Info.plist */,
 				F417679F2005F5BA0004BCF2 /* main.m */,
-				F41767B32006190F0004BCF2 /* smart2_bg_temp.png */,
+				F41767B52007078C0004BCF2 /* Numberback_highlight.png */,
 			);
 			path = TestPhoto;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 				F417679D2005F5BA0004BCF2 /* LaunchScreen.storyboard in Resources */,
 				F41767AA2005F6430004BCF2 /* PhotoViewController.xib in Resources */,
 				F417679A2005F5BA0004BCF2 /* Assets.xcassets in Resources */,
-				F41767B42006190F0004BCF2 /* smart2_bg_temp.png in Resources */,
 				F41767982005F5BA0004BCF2 /* Main.storyboard in Resources */,
+				F41767B62007078C0004BCF2 /* Numberback_highlight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
